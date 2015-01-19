@@ -110,21 +110,21 @@
 .feature-widget__background-image {
     background-repeat: no-repeat;
     background-position: center center;
-    /*-webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 100px;
-    height: 600px;
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;*/
-    align-items: center;
-    justify-content: left;
+    display: table;
+    min-height: 500px;
+    height: 700px;
+    width: 100%;
+    @media @tablet {
+        min-height: 400px;
+        max-height: 600px;
+    }
     @media @mobile {
-        height:300px;
+        min-height: 300px;
+        max-height: 500px;
     }
 }
 
@@ -132,11 +132,11 @@
 // --------------------
 
 .feature-widget__content-wrap {
+    background: fade(black, 30%);
+    display: table-cell;
+    padding: 30px 40px;
     text-align: left;
-    max-width: 80%;
-    @media @tablet {
-        max-width: 100%;
-    }
+    vertical-align: middle;
 }
 
 // Feature Content
