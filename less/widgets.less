@@ -914,9 +914,15 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     }
 }
 
+//  #Header Profile Widgets
+//  --------------
+
 .header-content {
     .social-item {
         margin-bottom:0;
+    }
+    .companyaddress__address-line {
+        display: inline-block;
     }
     &:before {
         content:"//";
@@ -935,6 +941,30 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
         display: table;
     }
 }
+
+.header-content .signupform__form-group {
+    display:inline-block;
+    margin-bottom: 10px;
+    .signupform__form {
+        padding: 20px 0 10px;
+    }
+    .signupform__label {
+        display: none;
+    }
+    .signupform__form-body {
+        margin: 0 30px 0;
+    }
+    .profile__message, 
+    .companyheadline__headline, 
+    .message p {
+        color: @font-swatch10-color;
+    }
+}
+
+.map__embed-wrap {
+    min-width: 300px;
+}
+
 
 // -----------------------------
 // 15. #Facebook
