@@ -44,11 +44,49 @@
 // Footer
 // ------
 
-.template-footer {
+.template-footer1 {
+	display: block;
+    background-image: image('/images/form-bg.png');
+    background-repeat: repeat;
+    background-position: left center;
+	text-align: center;
+	color: @font-swatch4-color;
+	padding: 40px 0px;
+	// Change heading elements to white
+	h1, h2, h3, h4 {
+		color: @font-swatch4-color;
+	}
+	// Lighten paragraph & link elements
+	p, a {
+		color: @font-swatch4-color;
+		margin: 10px 0 0 0;
+	}
+	// Reset Twitter feed styles
+	.twitter-feed {
+		padding: 0;
+		background-color: transparent;
+	}
+	span {
+		margin: 10px 0px;
+	}
+	.social-social-link {
+		padding: 5px 2px 5px 7px;
+	}
+}
+
+
+.template-footer2 {
 	min-height: 60px;
 	background-color: darken(@color-swatch4,5%);
 	text-align: center;
 	color: @font-swatch8-color;
+	padding: 15px 20px 0 20px;
+	@media @tablet {
+		min-height: 80px;
+	}
+	@media @mobile {
+		min-height: 100px;
+	}
 	// Change heading elements to white
 	h1, h2, h3, h4 {
 		color: @font-swatch8-color;
@@ -56,12 +94,28 @@
 	// Lighten paragraph & link elements
 	p, a {
 		color: @font-swatch8-color;
-		padding: 0;
 	}
 	// Reset Twitter feed styles
 	.twitter-feed {
 		padding: 0;
 		background-color: transparent;
+	}
+	.left {
+		float: left;
+		text-align: left;
+	}
+	.right {
+		float: right;
+		text-align: right;
+	}
+	.left,
+	.right {
+		width: 50%;
+		display: inline-block;
+		@media @mobile {
+			width:100%;
+			text-align: center;
+		}
 	}
 }
 
@@ -122,9 +176,12 @@ blockquote:before {
 // Form
 // ----------
 
-form, .form {
-    background-color: @color-swatch7;
+.form {
     padding: 20px 0 10px;
+    display: block;
+    background-image: image('/images/form-bg.png');
+    background-repeat: repeat;
+    background-position: left center;
     @media @tablet {
     	padding:10px 0;
     }
@@ -168,15 +225,22 @@ form, .form {
 // Legend
 // ----------
 
-legend,
-.signup-form__form label,
-.blog-search__form label { 
+legend { 
 	width: 100%;
 	padding: 10px 30px 20px;
 	color: @font-swatch1-color;
-	@media @mobile {
-		padding: 6px 20px;
-	}
+	font-size: @font-swatch1-font-size;
+    line-height: @font-swatch1-line-height;
+    color: @font-swatch1-color;
+    font-weight: @font-swatch1-font-weight;
+    @media @mobile {
+    	padding: 10px 20px 0px;
+    }
+}
+
+.signup-form__form label,
+.blog-search__form label {
+	padding: 0px 0px 10px 0px;
 }
 
 label {
@@ -201,6 +265,8 @@ select {
 }
 
 
+
+
 // Inputs: Text
 // ------------
 
@@ -221,20 +287,31 @@ textarea,
 .blog-search__form label,
 .product-listing__legend {
     border-bottom: 0;
-    text-align: center;
     font-size: @font-swatch1-font-size;
     font-weight: @font-swatch1-font-weight;
 }
+
+
+
+
 
 // -----------------------------
 // 4. #Buttons
 // -----------------------------
 
-button, .button {
-    padding: 8px 30px;
+button, 
+.button {
+    padding: 8px 20px;
     background-color: @color-swatch4;
     color: @font-swatch7-color;
+    .transitions;
+    &:hover {
+    	background-color: @color-swatch2;
+    }
 }
+
+
+
 
 // -----------------------------
 // 5. #Images

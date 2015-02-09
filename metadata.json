@@ -1,8 +1,8 @@
 {
-    "name":"Vision",
-    "thumbnail":"vision.png",
-    "screenshot":"vision.png",
-    "tags": { "en": ["minimal", "clean", "gallery", "orange", "portfolio", "technology", "camera", "images", "modern", "design"] },
+    "name":"Unite",
+    "thumbnail":"unite.png",
+    "screenshot":"unite.png",
+    "tags": { "en": ["minimal", "clean", "gallery", "black", "charity", "africa", "world", "organisation", "modern", "design"] },
     "pageTypes":["home"],
     "templateType":"standard",
     "widgetVersion":2,
@@ -21,43 +21,43 @@
             "color4":"#000000",
             "color5":"#2b3040",
             "color6":"#ffffff",
-            "color7":"#EAEAEA"
+            "color7":"#000000"
         },
         "Swatch 2": {
             "color1":"#ffffff",
-            "color2":"#01b4f0",
+            "color2":"#ca1414",
             "color3":"#ca1414",
             "color4":"#000000",
             "color5":"#888888",
             "color6":"#ffffff",
-            "color7":"#eeeeee"
+            "color7":"#000000"
         },
         "Swatch 3": {
             "color1":"#ffffff",
-            "color2":"#01b4f0",
+            "color2":"#82E567",
             "color3":"#82E567",
             "color4":"#4F7391",
             "color5":"#888888",
             "color6":"#ffffff",
-            "color7":"#eeeeee"
+            "color7":"#000000"
         },
         "Swatch 4": {
             "color1":"#ffffff",
-            "color2":"#01b4f0",
+            "color2":"#ca1414",
             "color3":"#808080",
             "color4":"#000000",
             "color5":"#888888",
             "color6":"#ffffff",
-            "color7":"#eeeeee"
+            "color7":"#000000"
         },
         "Swatch 5": {
             "color1":"#ffffff",
             "color2":"#01b4f0",
-            "color3":"#4BA5A1",
-            "color4":"#2B7774",
+            "color3":"#203D59",
+            "color4":"#203D59",
             "color5":"#888888",
             "color6":"#ffffff",
-            "color7":"#eeeeee"
+            "color7":"#000000"
         }
     },
     "fontSwatch": {
@@ -108,7 +108,7 @@
             "font-weight": "400",
             "line-height": "inherit",
             "color": "@color-swatch1",
-            "color-hover": "@color-swatch4",
+            "color-hover": "darken(@color-swatch1,30%)",
             "letter-spacing": "2px",
             "background-color": "@color-swatch1",
             "background-color-hover": "@color-swatch1"

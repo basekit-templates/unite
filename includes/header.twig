@@ -4,6 +4,9 @@
         {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
         {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
+        <div class="header-content">
+        	{{widget('profile', 'headercolumn1socialicons', { 'profileType' : 'socialicons' })|raw}}
+        </div>
     </div>
 </header>
 <!-- End Header -->

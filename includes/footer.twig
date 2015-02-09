@@ -1,9 +1,23 @@
-<!-- Footer -->
-<footer class="template-footer">
+<!-- Footer 1 -->
+<footer class="template-footer1">
 
 	<div class="container">
-        {{widget('profile', 'footerprofilecopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+		<h1>{{widget('content', 'pagetitle', {content: 'This is a content widget.', lines: 'all'})|raw}}</h1>
+		<span>{{widget('content', 'pagedescription', {content: 'This is a content widget.', lines: 'all'})|raw}}</span>
+        {{widget('socialicons', 'socialnetworks', {})|raw}}
+        {{widget('profile', 'footercolumn1socialicons', { 'profileType' : 'socialicons' })|raw}}
 	</div>
 
 </footer>
-<!-- End Footer -->
+<!-- End Footer 1 -->
+
+<!-- Footer 2-->
+<footer class="template-footer2">
+	<div class="left">
+		<h4>{{widget('content', 'pagetitle', {content: 'This is a content widget.', lines: 'all'})|raw}}</h4>
+	</div>
+	<div class="right">
+       	{{widget('profile', 'footerprofilecopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+       </div>
+</footer>
+<!-- End Footer 2-->
