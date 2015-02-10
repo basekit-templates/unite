@@ -915,6 +915,29 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 //  --------------
 
 .header-content {
+    // Flex child
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    @media @tablet {
+        -webkit-order: 4;
+        -ms-flex-order: 4;
+        order: 4;
+        display:block;
+    }
+}
+
+.header-content {
     .social-item {
         margin-bottom:0;
     }
