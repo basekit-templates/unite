@@ -941,8 +941,21 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     .social-item {
         margin-bottom:0;
     }
+    .profile__companycopyright,
+    .profile__companyaddress {
+        margin-top: 10px;
+    }
     .companyaddress__address-line {
         display: inline-block;
+    }
+    .map__embed-wrap {
+        min-width: 300px;
+    }
+    .profile__message, 
+    .companyheadline__headline, 
+    .message p,
+    .twitter__tweet-content {
+        color: @font-swatch10-color;
     }
     &:before {
         content:"//";
@@ -973,15 +986,6 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     }
     .signupform__form-body {
         margin: 0 30px 0;
-    }
-    .profile__message, 
-    .companyheadline__headline, 
-    .message p,
-    .twitter__tweet-content {
-        color: @font-swatch10-color;
-    }
-    .map__embed-wrap {
-        min-width: 300px;
     }
 }
 
