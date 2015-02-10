@@ -889,7 +889,8 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 .profile__companystrapline {
     color: @font-swatch6-color;
     font-size: @font-swatch6-font-size;
-    line-height: @font-swatch6-line-height
+    line-height: @font-swatch6-line-height;
+    max-width: 400px;
 }
 
 // Phone Number
@@ -947,7 +948,8 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     }
     .profile__companycopyright,
     .profile__companyaddress,
-    .profile__companybusiness {
+    .profile__companybusiness,
+    .profile__companyheadline {
         margin-top: 10px;
     }
     .companyaddress__address-line {
@@ -963,13 +965,6 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     .twitter__timestamp,
     .twitter__tweet-meta {
         color: @font-swatch10-color;
-    }
-    &:before {
-        content:"//";
-        color: @font-swatch10-color;
-        @media @tablet {
-            display: none;
-        }
     }
 } 
 
