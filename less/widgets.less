@@ -966,12 +966,6 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
         font-size: @font-swatch5-font-size;
         line-height: @font-swatch5-line-height
     }
-    .signupform__label {
-        display: none;
-    }
-    .signupform__form-body {
-        margin: 0 30px 0;
-    }
     &:before {
         content:"//";
         color: @font-swatch10-color;
@@ -996,8 +990,17 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     .signupform__form {
         padding: 20px 0 10px;
     }
+    .signupform__label {
+        display: none;
+    }
+    .signupform__form-body {
+        margin: 0 30px 0;
+    }
 }
 
+.header-content .signupform__label {
+    display: none;
+}
 
 // -----------------------------
 // 15. #Facebook
