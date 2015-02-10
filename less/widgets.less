@@ -840,12 +840,12 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 
 .twitter__tweet-item {
     border-bottom: 1px solid lighten(@color-swatch7,90%);
-    padding:0px 0px 20px 0px;
-    margin:0px 0px 20px 0px;
+    padding: 0 0 20px 0;
+    margin: 10px 0 20px 0;
     &:last-child {
         border-bottom:0;
-        padding:0px 0px 7px 0px;
-        margin:0px 0px 7px 0px;
+        padding:0 0 7px 0;
+        margin:0 0 7px 0;
     }
 }
 
@@ -934,6 +934,7 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
+    border-left: 1px solid darken(@color-swatch1,10%);
     @media @tablet {
         -webkit-order: 4;
         -ms-flex-order: 4;
@@ -954,9 +955,6 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     }
     .companyaddress__address-line {
         display: inline-block;
-    }
-    .map__embed-wrap {
-        min-width: 300px;
     }
     .profile__message, 
     .companyheadline__headline, 
@@ -985,12 +983,31 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     }
 }
 
-.header-content .signupform__legend {
+//  #Header & Footer Profile Widgets
+//  --------------
+
+.header-content .signupform__legend,
+.template-footer2 .signupform__legend {
     display: none;
 }
 
-.header-content .signupform__form-body {
+.header-content .signupform__form-body,
+.template-footer2 .signupform__form-body {
     margin: 0 30px 0;
+}
+
+.header-content .map__embed-wrap,
+.template-footer2 .map__embed-wrap {
+        min-width: 300px;
+    }
+
+//  #footer Profile Widgets
+//  --------------
+
+.template-footer2 .twitter__avatar {
+    display: inline-block;
+    margin-left: 20px;
+    float: right;
 }
 
 // -----------------------------
