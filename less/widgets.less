@@ -820,6 +820,8 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
         display:block;
         margin-right:0;
         margin-bottom:20px;
+        margin: 0px auto;
+        display:table;
     }
 }
 
@@ -934,7 +936,7 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
-    border-left: 1px solid darken(@color-swatch1,90%);
+    border-left: 1px solid darken(@color-swatch1,80%);
     @media @tablet {
         -webkit-order: 4;
         -ms-flex-order: 4;
@@ -983,6 +985,12 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     }
 }
 
+.header-content .twitter__avatar { 
+    @media @mobile {
+        text-align: center;
+    }
+}
+
 //  #Header & Footer Profile Widgets
 //  --------------
 
@@ -998,8 +1006,23 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 
 .header-content .map__embed-wrap,
 .template-footer2 .map__embed-wrap {
-        min-width: 300px;
+    min-width: 300px;
+}
+
+.header-content .profile__signupform,
+.template-footer2 .profile__signupform {
+    @media @mobile {
+        text-align: center;
     }
+}
+
+
+.header-content .signupform__form,
+.template-footer2 .signupform__form {
+    @media @mobile {
+        padding: 20px 0 10px;
+    }
+}
 
 //  #footer Profile Widgets
 //  --------------
@@ -1008,6 +1031,9 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     display: inline-block;
     margin-left: 20px;
     float: right;
+    @media @mobile {
+        text-align: center;
+    }
 }
 
 .template-footer2 .profile__companystrapline {
@@ -1021,6 +1047,7 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 .template-footer2 .signupform__input {
     display: inline-block;
     float:left; 
+    width: 70%;
 }
 
 .template-footer2 .button--submit {
@@ -1030,7 +1057,7 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 }
 
 .template-footer2 .signupform__form {
-    padding: 10px 0 10px;
+    padding: 20px 0 20px;
 }
 
 // -----------------------------
