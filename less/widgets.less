@@ -49,7 +49,7 @@
     }
 }
 
-.logo {
+.header-logo {
     // Flex child
     -webkit-box-ordinal-group: 1;
     -moz-box-ordinal-group: 1;
@@ -91,14 +91,7 @@
 // 2.  #Company Name
 // -----------------------------
 
-.companyname {
-    @media @tablet {
-        text-align:center;
-    }
-}
-
-
-.companyname {
+.header-companyname {
     // Flex child
     -webkit-box-ordinal-group: 1;
     -moz-box-ordinal-group: 1;
@@ -121,7 +114,11 @@
     }
 }
 
-
+.companyname {
+    @media @tablet {
+        text-align:center;
+    }
+}
 
 
 // -----------------------------
@@ -147,7 +144,7 @@
     }
 }
 
-.extendednavigation {
+.header-extendednavigation {
     // Flex child
     -webkit-box-ordinal-group: 1;
     -moz-box-ordinal-group: 1;
@@ -956,13 +953,13 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     }
     .profile__message, 
     .companyheadline__headline, 
-    .message p {
+    .message p,
+    .twitter__tweet-content {
         color: @font-swatch10-color;
     }
-}
-
-.map__embed-wrap {
-    min-width: 300px;
+    .map__embed-wrap {
+        min-width: 300px;
+    }
 }
 
 
