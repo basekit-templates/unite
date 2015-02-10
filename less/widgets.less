@@ -955,8 +955,22 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     .profile__message, 
     .companyheadline__headline, 
     .message p,
-    .twitter__tweet-content {
+    .twitter__tweet-content,
+    .twitter__timestamp,
+    .twitter__tweet-meta {
         color: @font-swatch10-color;
+    }
+    .profile__companyheadline,
+    .profile__companystrapline {
+        color: @font-swatch10-color;
+        font-size: @font-swatch5-font-size;
+        line-height: @font-swatch5-line-height
+    }
+    .signupform__label {
+        display: none;
+    }
+    .signupform__form-body {
+        margin: 0 30px 0;
     }
     &:before {
         content:"//";
@@ -981,12 +995,6 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     margin-bottom: 10px;
     .signupform__form {
         padding: 20px 0 10px;
-    }
-    .signupform__label {
-        display: none;
-    }
-    .signupform__form-body {
-        margin: 0 30px 0;
     }
 }
 
