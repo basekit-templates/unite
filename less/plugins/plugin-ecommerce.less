@@ -243,16 +243,23 @@
 // -------------------------------
 
 .ecomproductslist__fieldset--filters {
-    width:50%;
     float:left;
     @media @tablet {
         width:100%;
     }
 }
 
+.ecomproductslist__fieldset--search {
+    float: right;
+    @media @tablet {
+        float: initial;
+    }
+}
+
 .ecomproductslist__form {
     max-width:100%;
-    padding: 20px 0 0px;
+    padding: 20px 20px 0 20px;
+    .clearfix
 }
 
 .ecomproductslist__form-group {
@@ -261,6 +268,14 @@
         width: 100%;
         display: block;
     }
+}
+
+.ecomproductslist__legend {
+    padding: 10px 0px 20px;
+}
+
+.ecomproductslist__form-body {
+    margin: 0 0px 20px 0px;
 }
 
 .cell--header.ecombasketsummary__cell, 
