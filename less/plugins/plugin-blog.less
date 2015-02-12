@@ -4,7 +4,7 @@
 
 // Blog Post List
 .post-content {
-	margin: 20px 0 20px;
+	margin: 20px 10px 20px;
 }
 
 .blog-search__input {
@@ -14,6 +14,10 @@
 .blogpostlist__post-image, 
 .blogpostlist__post-content {
 	text-align:center;
+}
+
+.blogpostlist__post-content {
+	padding: 0 10px 1px;
 }
 
 .blogpostlist__image {
@@ -64,7 +68,7 @@
 
 // Blog Post List Timestamp
 .blogpostlist .timestamp {
-	padding: 10px 0 30px;
+	padding: 20px 0 30px;
 	border-top: 1px solid lighten(@color-swatch7,90%);
 	margin: 0px auto;
 	display: table;
@@ -76,9 +80,6 @@
 }
 
 // Blog Post
-.blogpost__post-content {
-	text-align: left;
-}
 
 .blog-post__post-attributes {
 	float: left;
@@ -123,6 +124,8 @@
 }
 
 .blogpost__post-content {
+	text-align: left;
+	padding-bottom: 20px;
 	-webkit-box-ordinal-group: 3;  
 	-moz-box-ordinal-group: 3;     
 	-ms-flex-order: 3;     
@@ -146,7 +149,7 @@
 .blogpost__timestamp {
 	position: absolute;
 	bottom: 50px;
-	left: 40px;
+	padding-left: 10px;
 }
 
 // Blog Sharing Buttons
