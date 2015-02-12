@@ -803,7 +803,7 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 .widget__twitter {
     background-color: @color-swatch1;
     border: 1px solid lighten(@color-swatch7,90%);
-    padding: 15px 20px 0px;
+    padding: 15px 20px 10px;
     @media @tablet {
         padding:20px;
     }
@@ -827,7 +827,7 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 .twitter__tweet-wrap {
     display:inline-block;
     vertical-align: top;
-    margin: 10px 0 0 0;
+    margin: 1px 0 0 0;
     @media @tablet {
         max-width:320px;
     }
@@ -891,6 +891,7 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     color: @font-swatch6-color;
     font-size: @font-swatch6-font-size;
     line-height: @font-swatch6-line-height;
+    font-weight: @font-swatch6-font-weight;
     max-width: 400px;
 }
 
@@ -902,14 +903,18 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 }
 
 // Social Icons
-.template-header .social-link {
+.template-footer2 .social-link {
     padding: 0;
     border: 0;
     &:before {
-        color: @font-swatch10-color;
+        color: @color-swatch3;
     }
     &:hover {
         text-decoration: none;
+        border: 3px solid @color-swatch1;
+        &:before {
+            color: @font-swatch10-color;
+        }
         .transitions
     }
     .icon:before {
@@ -941,6 +946,22 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
         -ms-flex-order: 4;
         order: 4;
         display:block;
+    }
+}
+
+// Social Icons
+.template-header .social-link {
+    padding: 0;
+    border: 0;
+    &:before {
+        color: @font-swatch10-color;
+    }
+    &:hover {
+        text-decoration: none;
+        .transitions
+    }
+    .icon:before {
+        margin: 0;
     }
 }
 
