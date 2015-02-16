@@ -322,6 +322,13 @@
 /// Gallery Layout
 // --------------
 
+.homepage-gallery {
+    .image-link {
+        background-blend-mode: multiply;
+        opacity: 0.65;
+        -webkit-filter: grayscale(100%);
+    }
+}
     .widget__gallery {
         // Gallery List
         .gallery-list {
@@ -342,9 +349,6 @@
             &:hover {
                 opacity: 1!important;
                 .image-link {
-                    background-blend-mode: multiply;
-                    opacity: 0.65;
-                    -webkit-filter: grayscale(100%);
                     text-decoration: none;
                 }
                 figcaption {
