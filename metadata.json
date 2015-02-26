@@ -2,7 +2,11 @@
     "name":"Unite",
     "thumbnail":"unite.png",
     "screenshot":"unite.png",
-    "tags": { "en": ["minimal", "clean", "gallery", "black", "charity", "africa", "world", "organisation", "modern", "design"] },
+    "tags": {
+        "en": ["organisation", "charity", "fundraiser", "fund", "donation", "tourism", "event", "holiday"],
+        "es": ["organización", "caridad", "recaudador de fondos", "fondo", "donación", "turism", "evento", "vacaciones"],
+        "pt": ["organização", "caridade", "fundraiser", "fundo", "doação", "turismo", "evento", "fauna"]
+    },
     "pageTypes":["home"],
     "templateType":"standard",
     "widgetVersion":2,
