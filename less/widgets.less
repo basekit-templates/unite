@@ -843,17 +843,17 @@ input.input[type=search],
 
 // Content
 .twitter__avatar {
-    display:inline-block;
-    margin-right:20px;
+    display: inline-block;
+    margin-right: 20px;
     @media @mobile {
-        display:block;
-        margin-right:0;
-        margin-bottom:20px;
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
 
 .twitter__tweet-wrap {
-    display:inline-block;
+    display: inline-block;
     vertical-align: top;
     margin: 1px 0 0 0;
     @media @tablet {
@@ -1089,13 +1089,31 @@ input.input[type=search],
 //  #footer Profile Widgets
 //  --------------
 
+.template-footer1 .twitter__avatar {
+    display: table;
+    margin: 0px auto 20px;
+    @media @mobile {
+        display: table;
+        margin: 0px auto 20px;
+    }
+}
+
+.template-footer1 input[type="email"] {
+    width: 50%;
+}
+
+//  #footer Profile Widgets
+//  --------------
+
 .template-footer2 .twitter__avatar {
     display: inline-block;
     margin-left: 20px;
     float: right;
     @media @mobile {
-        text-align: center;
-    }
+        display: table;
+        margin: 0px auto 20px;
+        float: initial;
+    
 }
 
 .template-footer2 .profile__companystrapline {
