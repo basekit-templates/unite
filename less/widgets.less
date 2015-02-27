@@ -215,6 +215,9 @@
     padding: 30px 40px;
     text-align: left;
     vertical-align: middle;
+    @media @mobile {
+        padding: 10px;
+    }
 }
 
 
@@ -227,12 +230,12 @@
     @media @tablet {
         font-size: bkscale(@font-swatch8-font-size,0.8);
         line-height: bkscale(@font-swatch8-line-height,0.6);
-        max-width: 100%;
+        max-width: 0;
     }
     @media @mobile {
         font-size: bkscale(@font-swatch8-font-size,0.7);
         line-height: bkscale(@font-swatch8-line-height,0.6);
-        max-width: 100%;
+        max-width: 0;
     }
 }
 
@@ -246,6 +249,7 @@
     @media @mobile {
         font-size: bkscale(@font-swatch9-font-size,0.8);
         line-height: bkscale(@font-swatch9-line-height,0.7);
+        max-width: 0;
     }
 }
 
@@ -916,6 +920,22 @@ input.input[type=search],
     font-size: @font-swatch6-font-size;
     line-height: @font-swatch6-line-height;
     font-weight: @font-swatch6-font-weight;
+}
+
+.header-content {
+    .companystrapline__strapline,
+    .companydescription__description,
+    .companyaddress__address-line,
+    .emailaddress__email,
+    .companyphone__phone-number-link,
+    .companybusiness__business,
+    .companycopyright__copyright,
+    .companyheadline__headline,
+    .profile__companystrapline {
+    color: @font-swatch6-color;
+    font-size: @font-swatch6-font-size;
+    line-height: @font-swatch6-line-height;
+    font-weight: @font-swatch6-font-weight;
     max-width: 400px;
 }
 
@@ -966,6 +986,7 @@ input.input[type=search],
         -ms-flex-order: 4;
         order: 4;
         display:block;
+        border-left: 0;
     }
 }
 

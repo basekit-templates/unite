@@ -34,7 +34,6 @@
 	}
 }
 
-
 // Navigation Link
 .navigation-item .item-name {
 	padding:5px 15px;
@@ -79,7 +78,6 @@
 	}
 	@media @tablet {
 		border-top: none;
-		background-color: @color-swatch1;
 		position: relative;
 		top: 0;
 		background-color: @color-swatch3;
@@ -90,6 +88,17 @@
 			display: block;
 		}
 	}
+}
+
+.navigation-list--children {
+	@media @mobile {
+		white-space: normal;
+	}
+}
+
+// Selected nav item
+.navigation-item.selected > .item-name { 
+	color: @font-swatch6-color-hover;
 }
 
 // Collapsible navigation
