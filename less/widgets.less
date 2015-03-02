@@ -300,19 +300,22 @@
 // Gallery & Slideshow
 .image-title,
 .image-description {
-    display: block;
     color: @color-swatch1;
-    text-align: center;
 }
 
-.image-title {
-    font-size: bkscale(@font-swatch8-font-size,0.4);
-    line-height: bkscale(@font-swatch8-line-height, 0.4);
+// Image Widget
+.imagewidget__image-title,
+.imagewidget__image-description {
+    color: @font-swatch4-color;
+    font-size: @font-swatch4-font-size;
+    line-height: @font-swatch4-line-height;
+    text-shadow: none;
 }
 
-.image-description {
-    font-size: @font-swatch9-font-size;
-    line-height: @font-swatch9-line-height;
+.imagewidget__image-description {
+    color: @font-swatch5-color;
+    font-size: @font-swatch5-font-size;
+    line-height: @font-swatch5-line-height;
 }
 
 // Image Widget
@@ -584,7 +587,14 @@
 }
 
 .pause-toggle {
-    display:none;
+    position: absolute;
+    left: -30px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0px auto;
+    display: table;
+    width: 5%;
 }
 
 .button--pagination.slideshow__button {
@@ -1158,9 +1168,20 @@ input.input[type=search],
 
 
 // -----------------------------
-// 16. #Facebook
+// 16. #Yelp
 // -----------------------------
 
 .yelp-reviews__review-title {
     font-size: @font-swatch4-font-size;
+}
+
+
+
+
+// -----------------------------
+// 16. #Yelp
+// -----------------------------
+
+.bk-map.map.widget__map {
+    min-height: 100px;
 }
