@@ -35,7 +35,7 @@
     -webkit-box-shadow: 1px 1px 1px 0px rgba(230,230,230,1);
     -moz-box-shadow: 	1px 1px 1px 0px rgba(230,230,230,1);
     box-shadow: 		1px 1px 1px 0px rgba(230,230,230,1);
-	@media @mobile {
+	@media screen and (min-width: 285px) and (max-width: 568px)  {
 		margin-right: 0;
 		width: 100%;
 	}
@@ -143,6 +143,12 @@
 .blogpost__timestamp {
 	position: absolute;
 	bottom: 50px;
+}
+
+.blogpost__post-body hr {
+	border: 0;
+	height: 1px;
+	background-color: @color-swatch7;
 }
 
 // Blog Sharing Buttons

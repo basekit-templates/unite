@@ -31,8 +31,9 @@
 
 // 13.   #DIVIDER (KEYLINE)
 // 14.   #PROFILE
-// 15.   #Facebook
+// 15.   #FACEBOOK
 // 16.   #YELP
+// 17.   #MAP
 
 // -----------------------------
 // 1.  #Logo
@@ -341,121 +342,110 @@
         -webkit-filter: grayscale(100%);
     }
 }
-    .widget__gallery {
-        // Gallery List
-        .gallery-list {
-            .clearfix; 
-        }
-        // Gallery Item
-        .gallery-item {
-            display: inline-block;
-            float: left;
-            position: relative;
-            width: 33.33%;
-            .transitions;
-            vertical-align: top;
-            // Display at 100% at tablet
-            @media @tablet {
-                width: 100%;
-            }
-            &:hover {
-                opacity: 1!important;
-                .image-link {
-                    text-decoration: none;
-                }
-                figcaption {
-                    background-color: fade(@contrast-color, 90%);
-                    display: flex;
-                    height: 100%;
-                    opacity: 1;
-                    .transitions;
-                    visibility: visible;
-                }
-            }
-        }
 
-        // Hide Figcaption
-        figcaption {
-            // Flex
-            display: flex;
-            -webkit-align-items: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-flex-direction: column;
-            flex-direction: column;
-            -webkit-justify-content: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-
-            position: absolute;
-            display: block;
-            height: 0;
-            margin: 0;
-            padding: 0 15px;
-            opacity: 0;
-            text-align: center;
-            top: 0;
+.widget__gallery {
+    // Gallery List
+    .gallery-list {
+        .clearfix; 
+    }
+    // Gallery Item
+    .gallery-item {
+        display: inline-block;
+        float: left;
+        position: relative;
+        width: 33.33%;
+        .transitions;
+        vertical-align: top;
+        // Display at 100% at tablet
+        @media @tablet {
             width: 100%;
-            visibility: hidden;
-            @media @mobile {
-                left: 0;
-            }
-            .caption-link:hover {
+        }
+        &:hover {
+            opacity: 1!important;
+            .image-link {
                 text-decoration: none;
             }
-            .image-title {
-                color: @color-swatch1;
-                text-transform: uppercase;
-                font-family: @font-swatch4-font-family;
-                letter-spacing: 1px;
-                font-size: 15px;
-                display: block;
-                padding: 6px 12px 5px;
-                border-bottom: 1px solid fade(@color-swatch1, 50%);
-                margin-bottom: 10px;
-                padding-bottom: 10px;
-            }
-            .image-description {
-                color: darken(@color-swatch1, 15%);
-                font-size: 15px;
-                line-height: 23px;
-            }
-        }
-
-        // Use Background Image
-        .image-link {
-            display: block;
-            height: 280px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            @media @tablet {
-                height: 210px;
-            }
-            // Hide Inline Image
-            .image {
-                display: none;
+            figcaption {
+                background-color: fade(@contrast-color, 90%);
+                display: flex;
+                height: 100%;
+                opacity: 1;
+                .transitions;
+                visibility: visible;
             }
         }
     }
+    // Hide Figcaption
+    figcaption {
+        // Flex
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: absolute;
+        display: block;
+        height: 0;
+        margin: 0;
+        padding: 0 15px;
+        opacity: 0;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        visibility: hidden;
+        @media @mobile {
+            left: 0;
+        }
+        .caption-link:hover {
+            text-decoration: none;
+        }
+        .image-title {
+            color: @color-swatch1;
+            text-transform: uppercase;
+            font-family: @font-swatch4-font-family;
+            letter-spacing: 1px;
+            font-size: 15px;
+            display: block;
+            padding: 6px 12px 5px;
+            border-bottom: 1px solid fade(@color-swatch1, 50%);
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+        .image-description {
+            color: darken(@color-swatch1, 15%);
+            font-size: 15px;
+            line-height: 23px;
+        }
+    }
+    // Use Background Image
+    .image-link {
+        display: block;
+        min-height: 150px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @media @tablet {
+            height: 210px;
+        }
+        // Hide Inline Image
+        .image {
+            display: none;
+        }
+    }
+}
+
+.homepage-gallery .widget__gallery .image-link {
+    height: 220px;
+}
 
 
 
 // Gallery Images
 // --------------
-
-// Use Background-image Method
-.image-gallery__image-link {
-    display: block;
-    height: 280px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    @media @tablet {
-        height: 210px;
-    }
-}
-
 
 // Hide Img Element
 .image-gallery__image {
@@ -519,7 +509,8 @@
     min-height: 400px;
 }
 
-.responsiveslideshow__slideshow-controls, .responsiveslideshow__caption {
+.responsiveslideshow__slideshow-controls, 
+.responsiveslideshow__caption {
     text-align: center;
     margin-top: 15px;
 }
@@ -588,13 +579,19 @@
 
 .pause-toggle {
     position: absolute;
-    left: -30px;
+    left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: 0px auto;
     display: table;
-    width: 5%;
+    width: 110px;
+}
+
+.responsiveslideshow__pause-toggle {
+    &:before {
+        margin-right: 0;
+    }
 }
 
 .button--pagination.slideshow__button {
@@ -605,10 +602,6 @@
     &:hover {
         background-color: @color-swatch2;
     }
-}
-
-.control-text {
-    display:none;
 }
 
 .slide-pagination {
@@ -1154,7 +1147,15 @@ input.input[type=search],
 
 .template-footer2 .signupform__form {
     padding: 20px 0 20px;
+    margin-bottom: 20px;
 }
+
+.template-footer2 .map__embed-wrap {
+    margin-bottom: 20px;
+}
+
+
+
 
 // -----------------------------
 // 15. #Facebook
@@ -1184,4 +1185,5 @@ input.input[type=search],
 
 .bk-map.map.widget__map {
     min-height: 100px;
+    height: 100%;
 }

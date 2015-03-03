@@ -103,7 +103,7 @@
             "font-family": "\"Petrona\", \"Georgia\", serif",
             "font-size": "15px",
             "font-weight": "300",
-            "line-height": "28px",
+            "line-height": "23px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
