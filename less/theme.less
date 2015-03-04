@@ -283,6 +283,7 @@ input[type="password"],
 textarea,
 .input--single-line {
     border: 0;
+    -webkit-appearance: none;
     &:focus {
         border: 0;
         box-shadow: none;
@@ -332,9 +333,6 @@ button,
 .image-description {
 	color: @color-swatch1;
 	text-shadow: 0 1px 3px rgba(0,0,0,0.2);
-	@media @tablet {
-		font-size: bkscale(@font-swatch5-font-size,50%);
-	}
 }
 
 // Image Widget

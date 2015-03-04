@@ -2,6 +2,49 @@
 // Unite: CSS > Plugin: Blog
 // -------------------------------------
 
+
+
+
+// Blog Post List Layout
+.bk-blogpostlist {
+	.post-article {
+		margin-bottom: 50px;
+		display: inline-block;
+		margin-right: 5%;
+		width: 47.3%;
+		vertical-align: top;
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+		.post-image {
+			background-color: rgb(248,248,248);
+			position: relative;
+			@media @mobile {
+				background-color: transparent;
+			}
+		}
+		.image-link {
+			text-align: center;
+			height: 350px;
+			line-height: 350px;
+		}
+		.image {
+			display: inline-block;
+			line-height: 0;
+			vertical-align: middle;
+		}
+	}
+}
+
+.responsivecolumns {
+	.bk-blogpostlist {
+		.post-article {
+			margin-right: 0;
+			width: 100%;
+		}
+	}
+}
+
 // Blog Post List
 .blog-search__input {
 	display: table;
