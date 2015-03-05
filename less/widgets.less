@@ -220,7 +220,7 @@
         text-align: center;
     }
     @media @mobile {
-        padding: 10px;
+        padding: 30px 10px;
     }
 }
 
@@ -668,6 +668,12 @@
     }
 }
 
+.phone-number-link {
+    @media @mobile {
+        padding: 10px 20px;
+    }
+}
+
 //  8.5  #PAYPAL
 //  --------------
 
@@ -1094,7 +1100,7 @@ input.input[type=search],
     }
 }
 
-//  #footer Profile Widgets
+//  #footer1 Profile Widgets
 //  --------------
 
 .template-footer1 .twitter__avatar {
@@ -1110,7 +1116,15 @@ input.input[type=search],
     width: 50%;
 }
 
-//  #footer Profile Widgets
+.template-footer1 legend {
+    @media @tablet {
+        text-align: center;
+        margin: 0px auto;
+        display: table;
+    }
+}
+
+//  #footer2 Profile Widgets
 //  --------------
 
 .template-footer2 .twitter__avatar {
