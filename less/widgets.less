@@ -40,7 +40,10 @@
 // -----------------------------
 
 .widget__logo {
-    margin-right:10px;
+    margin-right: 10px;
+    @media @tablet {
+        margin-right: 0;
+    }
 }
 
 .logo-link {
@@ -331,7 +334,7 @@
 // 6.  #Gallery
 // -----------------------------
 
-/// Gallery Layout
+// Homepage Gallery Link
 // --------------
 
 .homepage-gallery {
@@ -341,6 +344,24 @@
         -webkit-filter: grayscale(100%);
     }
 }
+
+.homepage-gallery .widget__gallery .image-link {
+    height: 220px;
+}
+
+.homepage-gallery {
+    .widget__gallery {
+        .gallery__gallery-item {
+            width: 33.333%;
+            @media @tablet {
+                width: 100%;
+            }
+        }
+    }   
+}
+
+// Widget Gallery Layout
+// --------------
 
 .widget__gallery {
     // Gallery List
@@ -352,11 +373,14 @@
         display: inline-block;
         float: left;
         position: relative;
-        width: 33.33%;
+        width: 33.333%;
         .transitions;
         vertical-align: top;
         // Display at 100% at tablet
         @media @tablet {
+            width: 50%;
+        }
+        @media @mobile {
             width: 100%;
         }
         &:hover {
@@ -437,11 +461,6 @@
     }
 }
 
-.homepage-gallery .widget__gallery .image-link {
-    height: 220px;
-}
-
-
 
 // Gallery Images
 // --------------
@@ -451,10 +470,6 @@
     display: none;
 }
 
-.gallery__gallery-item {
-    position: relative;
-    width: 32%;
-}
 
 // Gallery Image Captions
 // ----------------------
@@ -476,26 +491,6 @@
     height: 100%;
 }
 
-
-// Gallery Image Captions
-// ----------------------
-
-// Hide Caption
-.image-gallery__caption {
-    display: none;
-    margin: 0;
-    padding: 20px;
-    background-color: hsla(hue(@spare-color), saturation(@spare-color), lightness(@spare-color), 0.8); 
-}
-
-// Show Caption
-.image-link:hover .image-gallery__caption {
-    position: absolute;
-    top: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
 
 
 
