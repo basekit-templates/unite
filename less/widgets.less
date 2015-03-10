@@ -437,11 +437,17 @@
             border-bottom: 1px solid fade(@color-swatch1, 50%);
             margin-bottom: 10px;
             padding-bottom: 10px;
+            @media @mobile {
+                display: none;
+            }
         }
         .image-description {
-            color: darken(@color-swatch1, 15%);
+            color: @color-swatch1;
             font-size: 15px;
             line-height: 23px;
+            @media @mobile {
+                display: none;
+            }
         }
     }
     // Use Background Image
@@ -1065,39 +1071,6 @@ input.input[type=search],
     }
 }
 
-//  #Header & Footer Profile Widgets
-//  --------------
-
-.header-content .signupform__legend,
-.template-footer2 .signupform__legend {
-    display: none;
-}
-
-.header-content .signupform__form-body,
-.template-footer2 .signupform__form-body {
-    margin: 0 30px 0;
-}
-
-.header-content .map__embed-wrap,
-.template-footer2 .map__embed-wrap {
-    min-width: 300px;
-}
-
-.header-content .profile__signupform,
-.template-footer2 .profile__signupform {
-    @media @mobile {
-        text-align: center;
-    }
-}
-
-
-.header-content .signupform__form,
-.template-footer2 .signupform__form {
-    @media @mobile {
-        padding: 20px 0 10px;
-    }
-}
-
 //  #footer1 Profile Widgets
 //  --------------
 
@@ -1165,6 +1138,29 @@ input.input[type=search],
     margin-bottom: 20px;
 }
 
+.template-footer2 .signupform__legend {
+    display: none;
+}
+
+.template-footer2 .signupform__form-body {
+    margin: 0 30px 0;
+}
+
+.template-footer2 .map__embed-wrap {
+    min-width: 300px;
+}
+
+.template-footer2 .profile__signupform {
+    @media @mobile {
+        text-align: center;
+    }
+}
+
+.template-footer2 .signupform__form {
+    @media @mobile {
+        padding: 20px 0 10px;
+    }
+}
 
 
 
