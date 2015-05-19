@@ -118,6 +118,9 @@
 }
 
 .companyname {
+    a {
+        text-decoration: none;
+    }
     @media @tablet {
         text-align: center;
         margin-bottom: 10px;
@@ -233,7 +236,7 @@
 
 // Feature Headline
 .feature__headline {
-    max-width: 75%;
+    max-width: 65%;
     @media @tablet {
         font-size: bkscale(@font-swatch8-font-size,0.8);
         line-height: bkscale(@font-swatch8-line-height,0.6);
@@ -248,7 +251,7 @@
 
 // Feature Strapline
 .feature__strapline {
-    max-width: 75%;
+    max-width: 65%;
     @media @tablet {
         font-size: bkscale(@font-swatch9-font-size,0.9);
         line-height: bkscale(@font-swatch9-line-height,0.8);
@@ -346,7 +349,7 @@
 }
 
 .homepage-gallery .widget__gallery .image-link {
-    height: 220px;
+    height: 250px;
     padding-bottom: 0;
 }
 
@@ -728,6 +731,7 @@
     line-height: @font-swatch1-line-height;
     color: @font-swatch1-color;
     font-weight: @font-swatch1-font-weight;
+    font-family: @font-swatch1-font-family;
 } 
 
 // Inputs
@@ -881,6 +885,7 @@ input.input[type=search],
     }
     a {
         font-weight: @font-swatch1-font-weight;
+        text-decoration: none;
     }
     p {
         padding-bottom:0;
