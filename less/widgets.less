@@ -210,6 +210,9 @@
         min-height: 200px;
         max-height: 400px;
     }
+    &:after {
+        display: none;
+    }
 }
 
 
@@ -341,9 +344,10 @@
 // --------------
 
 .homepage-gallery {
+    border-top: 3px solid @color-swatch7;
     .gallery-item:hover .image-link {
         background-blend-mode: multiply;
-        opacity: 0.65;
+        opacity: 20;
         -webkit-filter: grayscale(100%);
     }
 }
