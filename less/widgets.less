@@ -1102,6 +1102,9 @@ input.input[type=search],
 
 .template-footer1 input[type="email"] {
     width: 50%;
+    @media @mobile {
+        width: 60%;
+    }
 }
 
 .template-footer1 legend {
@@ -1120,6 +1123,22 @@ input.input[type=search],
     margin-top: 10px;
 }
 
+.template-footer1 .signupform__form {
+    padding: 0;
+}
+
+.template-footer1 p, .template-footer1 a {
+    padding: 0;
+}
+
+.template-footer1 .twitter__tweet-wrap p {
+    max-width: 60%;
+    width: 100%;
+    margin: 10px auto 0;
+    @media @tablet {
+        max-width: 100%;
+    }
+}
 
 //  #footer2 Profile Widgets
 //  ------------------------
