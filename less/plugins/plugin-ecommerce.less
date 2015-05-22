@@ -35,12 +35,19 @@
     display: block;
 }
 
-.product-content {
+.ecomproduct__product-title {
+    @media @tablet {
+        margin-top: 20px;
+    }
+}
+
+.ecomproduct__product-content {
     padding: 0 0 0 2%;
     display: inline-block;
     width: 50%;
     @media @tablet {
         width: 100%;
+        text-align: center;
     }
 }
 
@@ -107,18 +114,18 @@
     float: right;
     width: 52%;
     padding: 12px;
-    background-color: @color-swatch4;
+    background-color: @color-swatch2;
     &:hover {
-        background-color: @color-swatch2;
+        background-color: @color-swatch4;
     }
 }
 
 .ecom-product-go-to-checkout-btn {
     padding: 12px 12px;
     width: 48%;
-    background-color: @color-swatch2;
+    background-color: @color-swatch4;
     &:hover {
-        background-color: @color-swatch4;
+        background-color: @color-swatch2;
     }
 }
 
@@ -175,6 +182,7 @@
 
 .product-item-details {
     margin: 20px 0px;
+    text-align: center;
 }
 
 .ecomproductslist__product-item-title {

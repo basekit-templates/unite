@@ -4,6 +4,9 @@
 
 // Menu Navigation
 .menusections {
+    background-image: image('/images/form-bg.png');
+    background-repeat: repeat;
+    background-position: left center;
     .item-name {
         color: @font-swatch7-color;
         background-color: @color-swatch3;
@@ -13,6 +16,7 @@
 
 .menusections-list {
     text-align: center;
+    padding: 15px;
 }
 
 .menusections-item {
@@ -36,6 +40,12 @@
         padding: 10px 0px;
     }
 }
+
+.menusections__item-name {
+    font-family: @font-swatch4-font-family;
+    font-size: @font-swatch4-font-size;
+    font-weight: @font-swatch4-font-weight;
+}   
 
 .menusections-item:last-child:after {
     display: none;
@@ -131,6 +141,10 @@
 
 .menu__item-article .item-content {
     margin-top: 0;
+}
+
+.menu .item-image .image-link {
+    background-color: darken(@color-swatch1,12%)
 }
 
 // Menu Footer
