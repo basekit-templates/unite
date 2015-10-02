@@ -284,7 +284,7 @@
             "color__ecombasket--background": "transparent",
             "color__ecombasket-list--background": "transparent",
             "color__ecombasket-button--background": "@color__primary",
-            "color__ecombasket-button--background--hover": "@color__swatch2",
+            "color__ecombasket-button--background--hover": "@color-swatch2",
             "color__ecombasket-button--text": "@color-swatch1"
         },
         "menu": {
