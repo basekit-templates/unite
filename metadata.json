@@ -155,7 +155,7 @@
     },
     "styles": {
         "colors": {
-            "color__primary": "@color-swatch7",
+            "color__primary": "@color-swatch1",
             "color__secondary": "@color-swatch3"
         },
         "site": {
@@ -204,6 +204,11 @@
             "color__gallery-caption--background": "@color__primary",
             "color__gallery-title--text": "@font-swatch8-color",
             "color__gallery-description--text": "@font-swatch9-color"
+        },
+        "twitter": {
+            "color__twitter--background": "transparent",
+            "color__twitter-item--background": "transparent",
+            "color__twitter-account-name--background": "@color-swatch3"
         },
         "blog": {
             "color__blogpostlist-article--background": "lighten(@color-swatch7,95%)"
