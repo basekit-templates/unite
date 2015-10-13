@@ -197,6 +197,9 @@
             "color__feature-button--background": "@color-swatch2",
             "color__feature-button--background--hover": "darken(@color-swatch2,10%)"
         },
+        "forms": {
+            "color__form-legend--text": "@color-swatch4"
+        },
         "gallery": {
             "color__gallery-caption--background": "@color__primary",
             "color__gallery-title--text": "@font-swatch8-color",
