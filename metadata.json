@@ -204,9 +204,7 @@
             "color__gallery-description--text": "@font-swatch9-color"
         },
         "blog": {
-<<<<<<< HEAD
-            "color__blogpostlist-article--background": "lighten(@color-swatch7,95%)"
-=======
+            "color__blogpostlist-article--background": "lighten(@color-swatch7,95%)",
             "color__blogsearch--background": "@color-swatch7",
             "color__blogsearch-legend--background": "transparent",
             "color__blogsearch-legend--text": "@color-swatch4",
@@ -242,7 +240,6 @@
             "color__ecombasket-button--background": "@color__primary",
             "color__ecombasket-button--background--hover": "@color-swatch2",
             "color__ecombasket-button--text": "@color-swatch1"
->>>>>>> 4d1d85439785d95c746ce65ec6b390648209427f
         },
         "menu": {
             "color__menu-section-featured--background": "lighten(@color-swatch7,95%)"
