@@ -160,7 +160,7 @@
         },
         "site": {
             "color__body--background": "@color-swatch1",
-            "color__link--text": "@color-swatch2",
+            "color__link--text": "@color-swatch3",
             "color__companyname--text": "@font-swatch10-color"
         },
         "typography": {
@@ -186,7 +186,6 @@
             "color__navigation--text": "@font-swatch6-color",
             "color__navigation--text--hover": "darken(@font-swatch6-color, 20%)",
             "color__navigation--text--selected": "darken(@font-swatch6-color, 20%)",
-            "color__navigation-list--background": "@color-swatch3",
             "color__navigation-item--text": "@font-swatch6-color",
             "color__navigation-item--selected": "darken(@font-swatch6-color, 20%)"
         },
