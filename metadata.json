@@ -204,7 +204,7 @@
             "color__gallery-description--text": "@font-swatch9-color"
         },
         "blog": {
-            "color__blogpostlist-article--background": "lighten(@color-swatch7,95%)",
+            "color__blogpostlist-article--background": "lighten(@color-swatch7,95%)"
         },
         "menu": {
             "color__menu-section-featured--background": "lighten(@color-swatch7,95%)"
