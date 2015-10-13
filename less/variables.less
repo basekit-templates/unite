@@ -41,6 +41,7 @@ button,
 	color: @color__button--text;
 	&:hover {
 		background-color: @color__button--background--hover;
+		color: @color__button--text--hover;
 	}
 }
 
@@ -53,17 +54,23 @@ button,
 }
 
 .extendednavigation {
-	&__navigation-body {
-		background-color: transparent;
-	}
-	&__item-name.item-name {
-		color: darken(@color__navigation-item--text, 10%);
+	&__navigation--text {
+		color: @color__navigation--text;
 		&:hover {
-			color: darken(@color__navigation-item--selected, 10%);
+			color: @color__navigation--text--hover;
 		}
 	}
 	&__navigation-item.selected {
-		color: darken(@color__navigation-item--selected, 10%);
+		color: @color__navigation-item--selected;
+	}
+	&__navigation-body {
+		background-color: @color__navigation-list--background;
+	}
+	&__item-name.item-name {
+		color: @color__navigation-item--text;
+		&:hover {
+			color: @color__navigation-item--selected;
+		}
 	}
 }
 
@@ -85,7 +92,6 @@ button,
 }
 
 .gallery {
-	background-color: @color__gallery--background;
 	&__caption.caption {
 		background-color: @color__gallery-caption--background
 	}
@@ -98,7 +104,6 @@ button,
 }
 
 .blogpostlist {
-	background-color: @color__blogpostlist--background;
 	&__post-article {
 		background-color: @color__blogpostlist-article--background;
 	}
