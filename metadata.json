@@ -207,10 +207,13 @@
         "twitter": {
             "color__twitter--background": "transparent",
             "color__twitter-item--background": "transparent",
-            "color__twitter-account-name--background": "@color-swatch3"
+            "color__twitter-account-name--background": "@font-swatch7-color"
         },
         "blog": {
-            "color__blogpostlist-article--background": "lighten(@color-swatch7,95%)"
+            "color__blogpostlist-article--background": "lighten(@color-swatch7,95%)",
+            "color__blogpostlist-title--text": "@color-swatch4",
+            "color__blogpost-article--background": "transparent",
+            "color__blogpost-title--text": "@color-swatch4"
         },
         "menu": {
             "color__menu-section-featured--background": "lighten(@color-swatch7,95%)"
