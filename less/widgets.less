@@ -34,6 +34,10 @@
 // 15.   #FACEBOOK
 // 16.   #YELP
 // 17.   #MAP
+// 18.   #HR LINE
+
+
+
 
 // -----------------------------
 // 1.  #Logo
@@ -126,6 +130,8 @@
         margin-bottom: 10px;
     }
 }
+
+
 
 
 // -----------------------------
@@ -276,14 +282,13 @@
     background-color: @color-swatch2;
     &:after {
         content:"\f054";
-        color: darken(@color-swatch2,10%);
+        color: @font-swatch7-color;
         padding: 0 0 0 10px;
+        font-family: fontawesome;
+        vertical-align: middle;
     }
     &:hover {
         background-color: darken(@color-swatch2,10%);
-        &:after {
-            color: lighten(@color-swatch2,10%);
-        }
     } 
 }
 
@@ -344,7 +349,6 @@
 // --------------
 
 .homepage-gallery {
-    border-top: 3px solid @color-swatch7;
     .gallery-item:hover .image-link {
         background-blend-mode: multiply;
         opacity: 20;
@@ -509,6 +513,9 @@
 .responsivecolumns .widget__gallery .gallery-item:hover figcaption {
     background-color: transparent;
 }
+
+
+
 
 // -----------------------------
 // 7.  #Slideshow
@@ -1295,10 +1302,21 @@ input.input[type=search],
 
 
 // -----------------------------
-// 16. #Yelp
+// 17. #Map
 // -----------------------------
 
 .bk-map.map.widget__map {
     min-height: 100px;
     height: 100%;
+}
+
+
+
+
+// -----------------------------
+// 18. #Yelp
+// -----------------------------
+
+hr.rule {
+    background-color: darken(@color-swatch1, 7%);
 }
