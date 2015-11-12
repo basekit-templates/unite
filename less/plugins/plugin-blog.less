@@ -130,6 +130,8 @@
 // Blog Post
 .blogpost__post-content {
 	text-align: center;
+    margin: 20px 0 50px;
+    padding: 0 2%;
 }
 
 .blogpost__post-article {
@@ -162,17 +164,12 @@
 }
 
 .blogpost__button {
-	min-width: 240px;
-	padding: 6px 20px;
-	@media @mobile {
-		width: 180px;
-		min-width: 180px;
-	}
+	min-width: 100px;
+	padding: 5px 10px;
 }
 
 // Blog Post List Footer
 .blogpost__post-footer {
-	border-top: 1px solid @color-swatch7;
 	padding: 20px 20px;
 	text-align: center;
 }
@@ -248,6 +245,9 @@
 		background-color: @color-swatch2;
 		.transitions
 	}
+    @media @mobile {
+        width: 40%;
+    }
 }
 
 .blogpostlist .timestamp {
@@ -338,6 +338,7 @@
 
 .blogpost__post-attributes {
 	margin: 10px 0 0;
+    display: inline-block;
 }
 
 .product__category-link,
@@ -363,11 +364,17 @@
 	background-color: @color-swatch7;
 }
 
+.post-image .image {
+    max-height: 100%;
+}
+
 // Blog Sharing Buttons
 
 .blogpost__sharing-links {
-	float: left;
-	margin-top: 10px;
+    float: right;
+    margin-top: 0;
+    display: inline-block;
+    text-align: right;
 }
 
 .blogpost__network-item .icon:before {
@@ -385,8 +392,8 @@
 
 // Blog Post List Footer
 .blogpost__post-footer {
-	border-bottom: 1px solid lighten(@color-swatch7,90%);
+	border-top: 1px solid lighten(@color-swatch7,90%);
+    border-bottom: 1px solid lighten(@color-swatch7,90%);
 	text-align: left;
-	margin-top: 10px;
-	padding-bottom: 10px;
+    padding: 10px 20px 10px;
 }

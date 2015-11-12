@@ -188,12 +188,6 @@
 // 4.  #Feature
 // -----------------------------
 
-// Feature Overlay
-.feature-overlay {
-    background-color: fade(@color-swatch4,90%);
-}
-
-
 // Feature Background (Image)
 // --------------------------
 
@@ -226,7 +220,6 @@
 // --------------------
 
 .feature__content-wrap {
-    background: fade(@color-swatch7, 40%);
     display: table-cell;
     padding: 30px 40px;
     text-align: left;
@@ -239,37 +232,37 @@
     }
 }
 
+.feature__content-inner-wrap {
+    background-color: fade(@color-swatch7,40%);
+    display: inline-block;
+    padding: 40px;
+}
+
 
 // Feature Content
 // ---------------
 
 // Feature Headline
 .feature__headline {
-    max-width: 65%;
     @media @tablet {
         font-size: bkscale(@font-swatch8-font-size,0.8);
         line-height: bkscale(@font-swatch8-line-height,0.6);
-        max-width: 100%;
     }
     @media @mobile {
         font-size: bkscale(@font-swatch8-font-size,0.7);
         line-height: bkscale(@font-swatch8-line-height,0.6);
-        max-width: 100%;
     }
 }
 
 // Feature Strapline
 .feature__strapline {
-    max-width: 65%;
     @media @tablet {
         font-size: bkscale(@font-swatch9-font-size,0.9);
         line-height: bkscale(@font-swatch9-line-height,0.8);
-        max-width: 100%;
     }
     @media @mobile {
         font-size: bkscale(@font-swatch9-font-size,0.8);
         line-height: bkscale(@font-swatch9-line-height,0.7);
-        max-width: 100%;
     }
 }
 
@@ -344,33 +337,6 @@
 // -----------------------------
 // 6.  #Gallery
 // -----------------------------
-
-// Homepage Gallery Link
-// --------------
-
-.homepage-gallery {
-    .gallery-item:hover .image-link {
-        background-blend-mode: multiply;
-        opacity: 20;
-        -webkit-filter: grayscale(100%);
-    }
-}
-
-.homepage-gallery .widget__gallery .image-link {
-    height: 250px;
-    padding-bottom: 0;
-}
-
-.homepage-gallery {
-    .widget__gallery {
-        .gallery__gallery-item {
-            width: 33.333%;
-            @media @tablet {
-                width: 100%;
-            }
-        }
-    }   
-}
 
 // Widget Gallery Layout
 // --------------
