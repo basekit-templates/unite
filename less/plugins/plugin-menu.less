@@ -4,9 +4,7 @@
 
 // Menu Navigation
 .menusections {
-    background-image: image('/images/form-bg.png');
-    background-repeat: repeat;
-    background-position: left center;
+    background-color: @color-swatch7;
     .item-name {
         color: @font-swatch7-color;
         background-color: @color-swatch3;
@@ -36,7 +34,7 @@
     @media @mobile {
         display: block;
         margin-right: 0;
-        border-bottom: 1px dotted lighten(@color-swatch7,90%);
+        border-bottom: 1px dotted lighten(@color-swatch4,90%);
         padding: 10px 0px;
     }
 }
@@ -55,7 +53,7 @@
 .menu__section-header {
     margin: 10px 0px 30px;
     text-align: left;
-    border-bottom: 1px solid lighten(@color-swatch7,90%);
+    border-bottom: 1px solid lighten(@color-swatch4,90%);
     p {
        margin-bottom: 10px; 
     }
@@ -115,13 +113,13 @@
 
 .menu__item-description {
     clear: both;
-    border-top: 1px solid lighten(@color-swatch7,90%);
+    border-top: 1px solid lighten(@color-swatch4,90%);
     padding-top: 20px 0 10px;
     text-align: left;
 }
 
 .menu__dietary-item {
-    background-color: lighten(@color-swatch7,90%);
+    background-color: lighten(@color-swatch4,90%);
     padding: 0 5px;
     margin-top: 5px; 
 }
@@ -150,7 +148,7 @@
 // Menu Footer
 .menu__section-footer {
     text-align: center;
-    border: 1px solid lighten(@color-swatch7,90%);
+    border: 1px solid lighten(@color-swatch4,90%);
     padding: 20px 0 10px;
 }
 
@@ -160,11 +158,11 @@
     -webkit-box-shadow: 1px 1px 1px 0px rgba(230,230,230,1);
     -moz-box-shadow:    1px 1px 1px 0px rgba(230,230,230,1);
     box-shadow:         1px 1px 1px 0px rgba(230,230,230,1);
-    border: 1px solid lighten(@color-swatch7,90%);
+    border: 1px solid lighten(@color-swatch4,90%);
     padding: 20px;
 }
 
 .menu-item--featured .menu__item-subtitle:after,
 .menu-section--featured .menu__item-subtitle:after {
-    border-top: 1px solid lighten(@color-swatch7,80%);
+    border-top: 1px solid lighten(@color-swatch4,80%);
 }

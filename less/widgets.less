@@ -233,9 +233,16 @@
 }
 
 .feature__content-inner-wrap {
-    background-color: fade(@color-swatch7,40%);
+    background-color: fade(@color-swatch4,40%);
     display: inline-block;
     padding: 40px;
+    max-width: 60%;
+    @media @tablet {
+        max-width: 100%;
+    }
+    @media @mobile {
+        padding: 20px;
+    }
 }
 
 
@@ -584,7 +591,7 @@
 .button--pagination.slideshow__button {
     vertical-align: top;
     padding: 10px;
-    border: 4px solid lighten(@color-swatch7, 40%);
+    border: 4px solid lighten(@color-swatch4, 40%);
     background-color: transparent;
     &:hover {
         background-color: @color-swatch2;
@@ -894,7 +901,7 @@ input.input[type=search],
 // Body
 .widget__twitter {
     background-color: @color-swatch1;
-    border: 1px solid lighten(@color-swatch7,90%);
+    border: 1px solid lighten(@color-swatch4,90%);
     padding: 15px 20px 10px;
     @media @tablet {
         padding:20px;
@@ -933,7 +940,7 @@ input.input[type=search],
 }
 
 .twitter__tweet-item {
-    border-bottom: 1px solid lighten(@color-swatch7,90%);
+    border-bottom: 1px solid lighten(@color-swatch4,90%);
     padding: 0 0 20px 0;
     margin: 10px 0 20px 0;
     &:last-child {
