@@ -34,6 +34,10 @@
 // 15.   #FACEBOOK
 // 16.   #YELP
 // 17.   #MAP
+// 18.   #HR LINE
+
+
+
 
 // -----------------------------
 // 1.  #Logo
@@ -128,6 +132,8 @@
 }
 
 
+
+
 // -----------------------------
 // 3.  #Navigation
 // -----------------------------
@@ -182,12 +188,6 @@
 // 4.  #Feature
 // -----------------------------
 
-// Feature Overlay
-.feature-overlay {
-    background-color: fade(@color-swatch4,90%);
-}
-
-
 // Feature Background (Image)
 // --------------------------
 
@@ -220,7 +220,6 @@
 // --------------------
 
 .feature__content-wrap {
-    background: fade(@color-swatch7, 40%);
     display: table-cell;
     padding: 30px 40px;
     text-align: left;
@@ -233,37 +232,44 @@
     }
 }
 
+.feature__content-inner-wrap {
+    background-color: fade(@color-swatch4,40%);
+    display: inline-block;
+    padding: 40px;
+    max-width: 50%;
+    @media @tablet {
+        max-width: 100%;
+    }
+    @media @mobile {
+        padding: 20px;
+    }
+}
+
 
 // Feature Content
 // ---------------
 
 // Feature Headline
 .feature__headline {
-    max-width: 65%;
     @media @tablet {
         font-size: bkscale(@font-swatch8-font-size,0.8);
-        line-height: bkscale(@font-swatch8-line-height,0.6);
-        max-width: 100%;
+        line-height: bkscale(@font-swatch8-line-height,0.7);
     }
     @media @mobile {
         font-size: bkscale(@font-swatch8-font-size,0.7);
         line-height: bkscale(@font-swatch8-line-height,0.6);
-        max-width: 100%;
     }
 }
 
 // Feature Strapline
 .feature__strapline {
-    max-width: 65%;
     @media @tablet {
         font-size: bkscale(@font-swatch9-font-size,0.9);
         line-height: bkscale(@font-swatch9-line-height,0.8);
-        max-width: 100%;
     }
     @media @mobile {
         font-size: bkscale(@font-swatch9-font-size,0.8);
         line-height: bkscale(@font-swatch9-line-height,0.7);
-        max-width: 100%;
     }
 }
 
@@ -276,13 +282,13 @@
     background-color: @color-swatch2;
     &:after {
         content:"\f054";
-        color: darken(@color-swatch2,10%);
+        color: @font-swatch7-color;
+        padding: 0 0 0 10px;
+        font-family: fontawesome;
+        vertical-align: middle;
     }
     &:hover {
         background-color: darken(@color-swatch2,10%);
-        &:after {
-            color: lighten(@color-swatch2,10%);
-        }
     } 
 }
 
@@ -338,34 +344,6 @@
 // -----------------------------
 // 6.  #Gallery
 // -----------------------------
-
-// Homepage Gallery Link
-// --------------
-
-.homepage-gallery {
-    border-top: 3px solid @color-swatch7;
-    .gallery-item:hover .image-link {
-        background-blend-mode: multiply;
-        opacity: 20;
-        -webkit-filter: grayscale(100%);
-    }
-}
-
-.homepage-gallery .widget__gallery .image-link {
-    height: 250px;
-    padding-bottom: 0;
-}
-
-.homepage-gallery {
-    .widget__gallery {
-        .gallery__gallery-item {
-            width: 33.333%;
-            @media @tablet {
-                width: 100%;
-            }
-        }
-    }   
-}
 
 // Widget Gallery Layout
 // --------------
@@ -509,6 +487,9 @@
     background-color: transparent;
 }
 
+
+
+
 // -----------------------------
 // 7.  #Slideshow
 // ----------------------------- 
@@ -610,7 +591,7 @@
 .button--pagination.slideshow__button {
     vertical-align: top;
     padding: 10px;
-    border: 4px solid lighten(@color-swatch7, 40%);
+    border: 4px solid lighten(@color-swatch4, 40%);
     background-color: transparent;
     &:hover {
         background-color: @color-swatch2;
@@ -677,8 +658,10 @@
 //  --------------
 
 .clicktocall__phone-number-link {
+    color: @font-swatch6-color;
     &:hover {
         text-decoration: none;
+        background-color: transparent;
     }
 }
 
@@ -713,9 +696,7 @@
 
 .widget__contactform {
     display: block;
-    background-image: image('/images/form-bg.png');
-    background-repeat: repeat;
-    background-position: left center;
+    background-color: @color-swatch7;
 }
 
 .contactform .form {
@@ -777,6 +758,69 @@ input.input[type=search],
 
 .signup-form__input {
     display:table;
+}
+
+.signupform__form-body {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
+
+.signupform__form-group:nth-child(1) {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+.signupform__form-group:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
 }
 
 
@@ -857,7 +901,7 @@ input.input[type=search],
 // Body
 .widget__twitter {
     background-color: @color-swatch1;
-    border: 1px solid lighten(@color-swatch7,90%);
+    border: 1px solid lighten(@color-swatch4,90%);
     padding: 15px 20px 10px;
     @media @tablet {
         padding:20px;
@@ -896,7 +940,7 @@ input.input[type=search],
 }
 
 .twitter__tweet-item {
-    border-bottom: 1px solid lighten(@color-swatch7,90%);
+    border-bottom: 1px solid lighten(@color-swatch4,90%);
     padding: 0 0 20px 0;
     margin: 10px 0 20px 0;
     &:last-child {
@@ -1232,10 +1276,21 @@ input.input[type=search],
 
 
 // -----------------------------
-// 16. #Yelp
+// 17. #Map
 // -----------------------------
 
 .bk-map.map.widget__map {
     min-height: 100px;
     height: 100%;
+}
+
+
+
+
+// -----------------------------
+// 18. #Yelp
+// -----------------------------
+
+hr.rule {
+    background-color: darken(@color-swatch1, 7%);
 }

@@ -21,7 +21,6 @@
 // -------------------------------
 
 // Product Item
-
 .widget__ecomproduct {
     margin: 20px 0;
     .clearfix
@@ -71,10 +70,14 @@
     background: no-repeat;
 }
 
-// Product Information
+.product-image .image-link {
+    max-height: 600px;
+    line-height: 100%;
+    height: 100%;
+}
 
+// Product Information
 .ecomproduct__form {
-    background-color: transparent;
     border: 0;
     .form-group {
         margin-bottom: 0;
@@ -105,7 +108,6 @@
 }
 
 // Basket Buttons
-
 .ecomproduct__view-basket-wrap {
     text-align: center;
 }
@@ -307,6 +309,7 @@
 
 // Item Image
 .ecombasketsummary__summary-item-link {
+    background-image: none!important;
     @media @mobile {
         margin: 0px auto;
     }

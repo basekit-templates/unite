@@ -52,7 +52,7 @@
     background-position: left center;
 	text-align: center;
 	color: @color__h4--text;
-	padding: 40px 0px;
+	padding: 40px 20px;
 	// Change heading elements to white
 	h1, h2, h3, h4 {
 		color: @color__h4--text;
@@ -73,6 +73,9 @@
 	.social-social-link {
 		padding: 5px 2px 5px 7px;
 	}
+    @media @mobile {
+        padding: 20px 10px;
+    }
 }
 
 
@@ -179,9 +182,7 @@ blockquote:before {
 .form {
     padding: 10px 0;
     display: block;
-    background-image: image('/images/form-bg.png');
-    background-repeat: repeat;
-    background-position: left center;
+    background-color: @color-swatch7;
     @media @tablet {
     	padding:10px 0 5px;
     }
@@ -287,6 +288,7 @@ textarea,
 .input--single-line {
     border: 0;
     -webkit-appearance: none;
+    padding: 13px!important;
     &:focus {
         border: 0;
         box-shadow: none;
