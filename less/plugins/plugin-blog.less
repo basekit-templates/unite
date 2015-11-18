@@ -100,14 +100,8 @@
 
 .blogpostlist__post-excerpt--full hr {
 	height: 1px;
-  	background-color: @color-swatch4;
+  	background-color: #000000;
   	border: 0px;
-}
-
-// Blog Post List Timestamp
-.blogpostlist__timestamp {
-	padding: 22px 0 20px;
-	border-top: 1px solid @color-swatch4;
 }
 
 // Blog Post List Footer
@@ -139,9 +133,9 @@
 }
 
 .blogpost__post-title {
-	font-size: @font-swatch2-font-size;
-	font-weight: @font-swatch2-font-weight;
-	line-height: @font-swatch2-line-height;
+	font-size: @font__h2--font-size;
+	font-weight: @font__h2--font-weight;
+	line-height: @font__h2--line-height;
 }
 
 .blogpost__post-category {
@@ -200,8 +194,8 @@
 	margin-right: 5%;
 	width: 47.5%;
 	vertical-align: top;
-	background-color: darken(@color-swatch1,5%);
-    border: 1px solid lighten(@color-swatch4,90%);
+	background-color: darken(@color__body--background,5%);
+    border: 1px solid lighten(#000000,90%);
     -webkit-box-shadow: 1px 1px 1px 0px rgba(230,230,230,1);
     -moz-box-shadow: 	1px 1px 1px 0px rgba(230,230,230,1);
     box-shadow: 		1px 1px 1px 0px rgba(230,230,230,1);
@@ -224,7 +218,7 @@
 }
 
 .blogpostlist__read-more {
-	background-color: @color-swatch4;
+	background-color: @color__primary;
 	padding: 10px 20px;
 	color: @color__button--text;
 	font-size: @font-swatch7-font-size;
@@ -234,7 +228,7 @@
     margin: 0px auto;
 	&:hover {
 		text-decoration: none;
-		background-color: @color-swatch2;
+		background-color: @color__button--background--hover;
 		.transitions
 	}
     @media @mobile {
@@ -249,7 +243,7 @@
 // Blog Post List Timestamp
 .blogpostlist .timestamp {
 	padding: 20px 0 30px;
-	border-top: 1px solid lighten(@color-swatch4,90%);
+	border-top: 1px solid lighten(#000000,90%);
 	margin: 0px auto;
 	display: table;
 }
@@ -288,7 +282,7 @@
 
 .blogpost__post-article {
 	padding: 40px;
-	border: 1px solid lighten(@color-swatch4,90%);
+	border: 1px solid lighten(#000000,90%);
 	display: -webkit-box;      
 	display: -moz-box;         
 	display: -ms-flexbox;     
@@ -335,7 +329,7 @@
 
 .product__category-link,
 .blogpost__tag-link {
-	color: @color-swatch2;
+	color: @color__button--background--hover;
 }
 
 .blogpost__tags-title {
@@ -353,7 +347,7 @@
 .blogpost__post-body hr {
 	border: 0;
 	height: 1px;
-	background-color: @color-swatch4;
+	background-color: #000000;
 }
 
 .post-image .image {
@@ -374,18 +368,18 @@
 }
 
 .blogpost__button {
-	background-color: @color-swatch2;
+	background-color: @color__button--background;
 	padding: 4px 12px;
 	margin-bottom: 10px;
 	&:hover {
-		background-color: @color-swatch4;
+		background-color: @color__button--background--hover;
 	}
 }
 
 // Blog Post List Footer
 .blogpost__post-footer {
-	border-top: 1px solid lighten(@color-swatch4,90%);
-    border-bottom: 1px solid lighten(@color-swatch4,90%);
+	border-top: 1px solid lighten(#000000,90%);
+    border-bottom: 1px solid lighten(#000000,90%);
 	text-align: left;
     padding: 10px 40px 10px;
     @media @tablet {

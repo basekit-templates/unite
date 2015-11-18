@@ -81,7 +81,7 @@
 
 .template-footer2 {
 	min-height: 60px;
-	background-color: darken(@color-swatch4,5%);
+	background-color: darken(@color__h1--text,5%);
 	text-align: center;
 	color: @color__feature-headline--text;
 	padding: 15px 20px 0 20px;
@@ -157,7 +157,7 @@
 // Standard Text Link
 // ------------------
 
-a { color: @color-swatch3; }
+a { color: @color__link--text; }
 
 
 // Blockquote
@@ -166,7 +166,7 @@ a { color: @color-swatch3; }
 blockquote:before {
 	margin-right: 10px;
 	font-size: 32px;
-	color: @color-swatch3;
+	color: @color__secondary;
 }
 
 
@@ -182,7 +182,7 @@ blockquote:before {
 .form {
     padding: 10px 0;
     display: block;
-    background-color: @color-swatch7;
+    background-color: @color__primary;
     @media @tablet {
     	padding:10px 0 5px;
     }
@@ -239,11 +239,11 @@ legend {
 	width: 100%;
 	padding: 10px 30px 20px;
 	color: @color__h2--text;
-	font-size: @font-swatch2-font-size;
-    line-height: @font-swatch2-line-height;
+	font-size: @font__h1--font-size;
+    line-height: @font__h1--line-height;
     color: @color__h2--text;
-    font-weight: @font-swatch2-font-weight;
-    font-family: @font-swatch2-font-family;
+    font-weight: @font__h1--font-weight;
+    font-family: @font__h1--font-family;
     @media @mobile {
     	padding: 10px 20px 10px;
     }
@@ -264,13 +264,13 @@ label {
 select {
     height: 36px;
     outline: none;
-    border: 1px solid darken(@color-swatch1,10%);
+    border: 1px solid darken(#ffffff,10%);
     border-radius: 0;
-    background-color: @color-swatch1;
+    background-color: #ffffff;
     font-size: 12px;
     text-indent: 0;
     &:hover, &:focus {
-        background-color: @color-swatch1;
+        background-color: #ffffff;
         cursor: pointer;
 	}
 }
@@ -300,8 +300,8 @@ textarea,
 .blog-search__form label,
 .product-listing__legend {
     border-bottom: 0;
-    font-size: @font-swatch1-font-size;
-    font-weight: @font-swatch1-font-weight;
+    font-size: @font__h1--font-size;
+    font-weight: @font__h1--font-weight;
 }
 
 
@@ -314,11 +314,11 @@ textarea,
 button, 
 .button {
     padding: 8px 20px;
-    background-color: @color-swatch4;
+    background-color: @color__button--background;
     color: @color__button--text;
     .transitions;
     &:hover {
-    	background-color: @color-swatch2;
+    	background-color: @color__button--background--hover;
     }
 }
 
@@ -335,7 +335,7 @@ button,
 // Gallery & Slideshow
 .image-title,
 .image-description {
-	color: @color-swatch1;
+	color: #ffffff;
 	text-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 

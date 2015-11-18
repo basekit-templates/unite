@@ -147,7 +147,7 @@
     content: "";
     margin-left: 4px;
     border: 5px solid transparent;
-    border-top-color: @color-swatch6;
+    border-top-color: #ffffff;
 }
 
 // Add Styles to Selected Li
@@ -233,7 +233,7 @@
 }
 
 .feature__content-inner-wrap {
-    background-color: fade(@color-swatch4,40%);
+    background-color: @color__feature-content--background;
     display: inline-block;
     padding: 40px;
     max-width: 50%;
@@ -252,24 +252,24 @@
 // Feature Headline
 .feature__headline {
     @media @tablet {
-        font-size: bkscale(@font-swatch8-font-size,0.8);
-        line-height: bkscale(@font-swatch8-line-height,0.7);
+        font-size: bkscale(@font__feature-headline--font-size, 0.8);
+        line-height: bkscale(@font__feature-headline--line-height, 0.7);
     }
     @media @mobile {
-        font-size: bkscale(@font-swatch8-font-size,0.7);
-        line-height: bkscale(@font-swatch8-line-height,0.6);
+        font-size: bkscale(@font__feature-headline--font-size, 0.7);
+        line-height: bkscale(@font__feature-headline--line-height, 0.6);
     }
 }
 
 // Feature Strapline
 .feature__strapline {
     @media @tablet {
-        font-size: bkscale(@font-swatch9-font-size,0.9);
-        line-height: bkscale(@font-swatch9-line-height,0.8);
+        font-size: bkscale(@font__feature-strapline--font-size, 0.9);
+        line-height: bkscale(@font__feature-strapline--line-height, 0.8);
     }
     @media @mobile {
-        font-size: bkscale(@font-swatch9-font-size,0.8);
-        line-height: bkscale(@font-swatch9-line-height,0.7);
+        font-size: bkscale(@font__feature-strapline--font-size, 0.8);
+        line-height: bkscale(@font__feature-strapline--line-height, 0.7);
     }
 }
 
@@ -279,7 +279,7 @@
 
 .feature__button { 
     margin: 10px 0 0 0;
-    background-color: @color-swatch2;
+    background-color: @color__feature-button--background;
     &:after {
         content:"\f054";
         color: @color__button--text;
@@ -288,7 +288,7 @@
         vertical-align: middle;
     }
     &:hover {
-        background-color: darken(@color-swatch2,10%);
+        background-color: darken(@color__feature-button--background,10%);
     } 
 }
 
@@ -314,22 +314,22 @@
 // Gallery & Slideshow
 .image-title,
 .image-description {
-    color: @color-swatch1;
+    color: @color__p--text;
 }
 
 // Image Widget
 .imagewidget__image-title,
 .imagewidget__image-description {
     color: @color__h4--text;
-    font-size: @font-swatch4-font-size;
-    line-height: @font-swatch4-line-height;
+    font-size: @font__h4--font-size;
+    line-height: @font__h4--line-height;
     text-shadow: none;
 }
 
 .imagewidget__image-description {
     color: @color__p--text;
-    font-size: @font-swatch5-font-size;
-    line-height: @font-swatch5-line-height;
+    font-size: @font__p--font-size;
+    line-height: @font__p--line-height;
 }
 
 // Image Widget
@@ -374,7 +374,7 @@
                 text-decoration: none;
             }
             figcaption {
-                background-color: @color-swatch3;
+                background-color: @color__secondary;
                 display: flex;
                 height: 100%;
                 opacity: 1;
@@ -414,12 +414,12 @@
         .image-title {
             color: @color-swatch1;
             text-transform: uppercase;
-            font-family: @font-swatch4-font-family;
+            font-family: @font__h4--font-family;
             letter-spacing: 1px;
             font-size: 15px;
             display: block;
             padding: 6px 12px 5px;
-            border-bottom: 1px solid fade(@color-swatch1, 50%);
+            border-bottom: 1px solid fade(#ffffff, 50%);
             margin-bottom: 10px;
             padding-bottom: 10px;
             @media screen and (max-width: 164px) {
@@ -427,7 +427,7 @@
             }
         }
         .image-description {
-            color: @color-swatch1;
+            color: #ffffff;
             font-size: 15px;
             line-height: 23px;
             @media screen and (max-width: 164px) {
@@ -545,7 +545,7 @@
 }
 
 .responsiveslideshow__image-title {
-    line-height: @font-swatch4-line-height;
+    line-height: @font__h4--line-height;
 }
 
 // Slideshow Buttons
@@ -560,7 +560,7 @@
     position: absolute;
     top: 355px;
     width: 100%;
-    background-color: @color-swatch4;
+    background-color: #000000;
 }
 
 .previous-button {
@@ -591,10 +591,10 @@
 .button--pagination.slideshow__button {
     vertical-align: top;
     padding: 10px;
-    border: 4px solid lighten(@color-swatch4, 40%);
+    border: 4px solid lighten(#000000, 40%);
     background-color: transparent;
     &:hover {
-        background-color: @color-swatch2;
+        background-color: @color__feature-button--background;
     }
 }
 
@@ -623,15 +623,15 @@
 
 .tweet-button .icon:before {
     margin-right:5px;
-    color: darken(@color-swatch2, 10%);
+    color: darken(@color__feature-button--background, 10%);
     font-size:20px;
     padding: 0 10px 0 0;
 }
 
 .tweet-button__button {
-    background-color: @color-swatch2;
+    background-color: @color__feature-button--background;
     &:hover {
-        background-color: @color-swatch4;
+        background-color: @color__feature-button--background--hover;
     }
 }
 
@@ -641,15 +641,15 @@
 
 .dropbox-button .icon:before {
     margin-right:5px;
-    color: darken(@color-swatch2, 10%);
+    color: darken(@color__feature-button--background, 10%);
     font-size:20px;
     padding: 0 10px 0 0;
 }
 
 .dropbox-button__button {
-    background-color: @color-swatch2;
+    background-color: @color__feature-button--background;
     &:hover {
-        background-color: @color-swatch4;
+        background-color: @color__feature-button--background--hover;
     }
 }
 
@@ -681,9 +681,9 @@
 }
 
 .widget__paypalbuynow__button {
-    background-color: @color-swatch2;
+    background-color: @color__feature-button--background;
     &:hover {
-        background-color: @color-swatch4;
+        background-color: @color__feature-button--background--hover;
     }
 }
 
@@ -696,7 +696,7 @@
 
 .widget__contactform {
     display: block;
-    background-color: @color-swatch7;
+    background-color: @color__primary;
 }
 
 .contactform .form {
@@ -711,11 +711,11 @@
 
 // Legend
 .contactform .legend {
-    font-size: @font-swatch1-font-size;
-    line-height: @font-swatch1-line-height;
+    font-size: @font__h1--font-size;
+    line-height: @font__h1--line-height;
     color: @color__h1--text;
-    font-weight: @font-swatch1-font-weight;
-    font-family: @font-swatch1-font-family;
+    font-weight: @font__h1--font-weight;
+    font-family: @font__h1--font-family;
 } 
 
 // Inputs
