@@ -251,12 +251,17 @@
             "color__form--background": "@color-swatch7"
         },
         "twitter": {
-            "color__twitter-account-name--background": "@font-swatch7-color"
+            "color__twitter-account-name--background": "@color-swatch3",
+            "color__twitter-account-name--text": "@font-swatch7-color"
         },
         "blog": {
             "color__blogpostlist-article--background": "darken(@color-swatch1,7%)",
             "color__blogpostlist-title--text": "@color-swatch4",
             "color__blogpost-title--text": "@color-swatch4"
+        },
+        "socialicons": {
+            "color__socialicons--icon": "@color__primary",
+            "color__socialicons--icon--hover": "@color-swatch1"
         }
     }
 }

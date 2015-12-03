@@ -89,7 +89,19 @@ form,
 
 .twitter {
 	&__account-link {
-		color: @color__twitter-account-name--background;
+		background-color: @color__twitter-account-name--background;
+		color: @color__twitter-account-name--text;
+	}
+}
+
+.socialicons {
+	&__social-link {
+		&:before {
+			color: @color__socialicons--icon;
+		}
+		&:hover:before {
+			color: @color__socialicons--icon--hover;
+		}
 	}
 }
 
