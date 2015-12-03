@@ -260,8 +260,8 @@
             "color__blogpost-title--text": "@color-swatch4"
         },
         "socialicons": {
-            "color__socialicons--icon": "@color__primary",
-            "color__socialicons--icon--hover": "@color-swatch1"
+            "color__socialicons--icon": "@color-swatch3",
+            "color__socialicons--icon--hover": "@color-swatch4"
         }
     }
 }
