@@ -25,14 +25,14 @@
 
 	{% include basekit.headScript %}
 </head>
-<body class="{{ page.backgroundClass }}">
+<body class="{{ page.backgroundClass }}" {{ isV10sSite ? 'id="migrated-site"' : '' }}>
 
 	{% block content %}
 	{% endblock %}
 
     {% include basekit.bodyScript %}
 
-    
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="{{ asset('libs/jquery-1.10.2.min.js')}}"><\/script>')</script>
 
@@ -48,7 +48,7 @@
 		$( ".navigation-item.folder" ).each(function() {
 			$( this ).click(function() {
 	  			$( this ).toggleClass( "open" );
-			});	
+			});
 		});
 
 	</script>
