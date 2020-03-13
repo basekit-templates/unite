@@ -1,5 +1,6 @@
 {
     "name":"Unite",
+    "versionTenCompatible": 1,
     "thumbnail":"unite.png",
     "screenshot":"unite-screenshot.jpg",
     "tags": {
