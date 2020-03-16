@@ -5,6 +5,7 @@
 
 #migrated-site {
 
+  height: auto !important;
 
   // Stylseheet overrides
   // -----------------------------
@@ -127,15 +128,15 @@
     padding: 0;
   }
 
-  .widget {
-    width: 100% !important;
-    max-width: none !important;
-    margin: 0;
-  }
-
   .widget .row {
-    width: @container-width;
+    width: auto;
     margin: 0 auto;
   }
 
 } // End of #migrated-site
+
+.edit .widget {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0;
+}
